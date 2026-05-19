@@ -1,5 +1,6 @@
-version = "0.0.1.0"
+version = "1.0.0"
 prevResult = 0
+operationList = ["Addition", "Subtraction","Multiplikation" ,"Division", "Potenz", "Mod", "ggT"]
 
 def Addition(zahl1, zahl2):
     result = zahl1 + zahl2
@@ -58,13 +59,15 @@ def ggT(zahl1, zahl2):
     print(F"Error: ggT")
     return result
 
-def Menu():
-    operationList = ["Addition", "Subtraction","Multiplikation" ,"Division", "Potenz", "Mod", "ggT"]
+def Start():
     print("-------------------------------------------------------------------------------------------------------------------------")
     print(f" GTT CALC Version: {version}, made by Ganztagszocker")
     print("-------------------------------------------------------------------------------------------------------------------------")
     print()
+    Menu()
 
+def Menu():
+    print("--------------------------------------------------------------------------------------------------------------------------")
     for index, operation in enumerate(operationList):
         print(f"{index} : {operation} ")
 
@@ -121,4 +124,4 @@ def Menu():
             ggT(zahl1, zahl2)
     Menu()
         
-Menu()
+Start()
