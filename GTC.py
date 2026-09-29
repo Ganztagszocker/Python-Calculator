@@ -4,7 +4,7 @@ import random
 
 sys.set_int_max_str_digits(0)
 
-version = "1.1.0"
+version = "1.2.0"
 prevResult = 0
 operationList = ["Misc Menu" ,"Addition", "Subtraction","Multiplikation" ,"Division", "Potenz", "Mod", "ggT", "Krypto", "RNG"]
 firstMenuCall = True
